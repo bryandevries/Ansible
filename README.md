@@ -1,6 +1,8 @@
 # Ansible
 Repo for Ansible learning
 
+```yaml
+
 [Module Examples]
 
 ansible linux -m ping
@@ -13,4 +15,7 @@ ansible linux -m gather_facts -k
 [Playbook Examples]
 
 ansible-playbook neofetch.yml -K -k
+
+```
+
 
