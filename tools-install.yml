@@ -1,0 +1,19 @@
+---
+  - name: Install Neofetch and htop
+    hosts: linux
+    become: true
+    tasks:
+
+      - name: Update apt cache
+        apt:
+          update_cache: yes
+
+      - name: Install Neofetch
+        apt:
+          name: neofetch
+          state: latest
+
+      - name: Install Htop
+        apt:
+          name: htop
+          state: latest
