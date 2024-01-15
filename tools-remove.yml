@@ -13,3 +13,8 @@
         apt:
           name: htop
           state: absent
+
+      - name: Remove net-tools
+        apt:
+          name: net-tools
+          state: absent
