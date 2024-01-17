@@ -10,15 +10,8 @@
 
       - name: Install Neofetch
         apt:
-          name: neofetch
-          state: latest
-
-      - name: Install Htop
-        apt:
-          name: htop
-          state: latest
-
-      - name: Install net-tool
-        apt:
-          name: net-tools
+          name: 
+            - neofetch
+            - net-tools
+            - htop
           state: latest
