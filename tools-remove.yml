@@ -1,10 +1,10 @@
 ---
-  - name: Install Neofetch and htop
+  - name: Install Neofetch, net-tools and htop
     hosts: linux
     become: true
     tasks:
 
-      - name: Remove Neofetch
+      - name: Remove Neofetch, net-tools and htop
         apt:
           name: 
             - neofetch
