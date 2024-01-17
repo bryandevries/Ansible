@@ -6,15 +6,9 @@
 
       - name: Remove Neofetch
         apt:
-          name: neofetch
+          name: 
+            - neofetch
+            - net-tools
+            - htop
           state: absent
 
-      - name: Remove Htop
-        apt:
-          name: htop
-          state: absent
-
-      - name: Remove net-tools
-        apt:
-          name: net-tools
-          state: absent
