@@ -1,5 +1,5 @@
 ---
-  - name: Install Neofetch and htop
+  - name: Install Neofetch, net-tools and htop
     hosts: linux
     become: true
     tasks:
@@ -8,7 +8,7 @@
         apt:
           update_cache: yes
 
-      - name: Install Neofetch
+      - name: Install Neofetch, net-tools and htop
         apt:
           name: 
             - neofetch
